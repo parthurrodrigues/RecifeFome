@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RecifeFome</string>
+    <string name="signup">Registro</string>
+    <string name="name">Nome</string>
+    <string name="user">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="already">Já possui cadastro? Logue-se!</string>
+    <string name="login">Entrar</string>
+    <string name="msghelp">Ajude o Recife doando alimentos!</string>
+    <string name="ajudantes">Lista de ajudantes</string>
+    <string name="helplister">Lista de usuários que ajudaram doando alimentos:</string>
+</resources>

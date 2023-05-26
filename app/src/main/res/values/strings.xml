@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RecifeFome</string>
+    <string name="signup">Signup</string>
+    <string name="name">Name</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="already">Already an user? Login</string>
+    <string name="login">Login</string>
+    <string name="msghelp">Help Recife by donating food!</string>
+    <string name="ajudantes">List of helpers</string>
+    <string name="helplister">List of users who helped by donating food:</string>
+</resources>
