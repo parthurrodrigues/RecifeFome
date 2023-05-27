@@ -4,9 +4,15 @@
     <string name="name">Name</string>
     <string name="user">User</string>
     <string name="password">Password</string>
-    <string name="already">Already an user? Login</string>
+    <string name="already">Don\'t have a registration? Register now!</string>
     <string name="login">Login</string>
     <string name="msghelp">Help Recife by donating food!</string>
     <string name="ajudantes">List of helpers</string>
     <string name="helplister">List of users who helped by donating food:</string>
+    <string name="comida_que_ser_doada">Food that will be donated</string>
+    <string name="alreadylogin">Already have registration? Login!</string>
+    <string name="campanha">Benefit campaign created with the aim of collecting food for the city of Recife.</string>
+    <string name="sucesssign">You have signed up successfully!</string>
+    <string name="uservazio">Username cannot be empty</string>
+    <string name="senhavazio">Password cannot be empty</string>
 </resources>

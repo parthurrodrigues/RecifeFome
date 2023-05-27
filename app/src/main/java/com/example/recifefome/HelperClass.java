@@ -2,7 +2,23 @@ package com.example.recifefome;
 
 public class HelperClass {
 
-    String name, email, username, password;
+    private String name;
+    private String email;
+    private String username;
+    private String password;
+    private String collaboration;
+
+    public HelperClass() {
+
+    }
+
+    public HelperClass(String name, String email, String username, String password, String collaboration) {
+        this.name = name;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.collaboration = collaboration;
+    }
 
     public String getName() {
         return name;
@@ -36,13 +52,11 @@ public class HelperClass {
         this.password = password;
     }
 
-    public HelperClass(String name, String email, String username, String password) {
-        this.name = name;
-        this.email = email;
-        this.username = username;
-        this.password = password;
+    public String getCollaboration() {
+        return collaboration;
     }
 
-    public HelperClass() {
+    public void setCollaboration(String collaboration) {
+        this.collaboration = collaboration;
     }
 }

@@ -9,6 +9,13 @@
     tools:context=".MainActivity">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
     <ImageView
         android:layout_width="129dp"
         android:layout_height="272dp"
@@ -32,6 +39,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/campanha"
+        android:gravity="center" />
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,9 +57,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="210dp"
         android:backgroundTint="#4682B4"
-        android:onClick="Lista"
+        android:id="@+id/btnListaUsuarios"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.689" />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

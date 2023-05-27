@@ -5,9 +5,15 @@
     <string name="name">Nome</string>
     <string name="user">Usuário</string>
     <string name="password">Senha</string>
-    <string name="already">Já possui cadastro? Logue-se!</string>
+    <string name="already">Não possui cadastro? Cadastre-se!</string>
     <string name="login">Entrar</string>
     <string name="msghelp">Ajude o Recife doando alimentos!</string>
     <string name="ajudantes">Lista de ajudantes</string>
     <string name="helplister">Lista de usuários que ajudaram doando alimentos:</string>
+    <string name="comida_que_ser_doada">Comida que será doada</string>
+    <string name="alreadylogin">" Já possui cadastro? Logue-se! "</string>
+    <string name="campanha">" Campanha beneficente criada com intuito de arrecadar alimentos para a cidade do Recife."</string>
+    <string name="sucesssign">Você se cadastrou com sucesso!</string>
+    <string name="uservazio">Nome de usuário não pode estar vazio</string>
+    <string name="senhavazio">Senha não pode estar vazio</string>
 </resources>

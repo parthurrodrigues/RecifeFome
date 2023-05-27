@@ -82,6 +82,20 @@
                 android:drawablePadding="8dp"
                 android:textColor="@color/black" />
 
+            <EditText
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_food_bank_24"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:drawablePadding="8dp"
+                android:id="@+id/signup_collaboration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/comida_que_ser_doada"
+                />
+
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -96,7 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/loginRedirectText"
-                android:text="@string/already"
+                android:text="@string/alreadylogin"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"

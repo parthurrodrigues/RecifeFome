@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 
-    EditText signupName, signupEmail, signupUsername, signupPassword;
+    EditText signupName, signupEmail, signupUsername, signupPassword, signupCollaboration;
     TextView loginRedirectText;
     Button signupButton;
     FirebaseDatabase database;
@@ -31,6 +30,7 @@ public class SignupActivity extends AppCompatActivity {
         signupEmail = findViewById(R.id.signup_email);
         signupUsername = findViewById(R.id.signup_username);
         signupPassword = findViewById(R.id.signup_password);
+        signupCollaboration = findViewById(R.id.signup_collaboration);
         signupButton = findViewById(R.id.signup_button);
         loginRedirectText = findViewById(R.id.loginRedirectText);
 
@@ -40,15 +40,16 @@ public class SignupActivity extends AppCompatActivity {
                 database = FirebaseDatabase.getInstance();
                 reference = database.getReference("users");
 
-                String name =signupName.getText().toString();
+                String name = signupName.getText().toString();
                 String email = signupEmail.getText().toString();
-                String username =  signupUsername.getText().toString();
+                String username = signupUsername.getText().toString();
                 String password = signupPassword.getText().toString();
+                String collaboration = signupCollaboration.getText().toString();
 
-                HelperClass helperClass = new HelperClass(name, email, username, password);
+                HelperClass helperClass = new HelperClass(name, email, username, password, collaboration);
                 reference.child(name).setValue(helperClass);
 
-                Toast.makeText(SignupActivity.this, "You have signup succesfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignupActivity.this, getString(R.string.sucesssign), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
@@ -59,7 +60,6 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
-
             }
         });
     }
