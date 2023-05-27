@@ -13,7 +13,7 @@ import java.util.List;
 public class UsuariosAdapter extends RecyclerView.Adapter<UsuariosAdapter.UsuarioViewHolder> {
 
     private List<Usuario> usuarios;
-    private OnUsuarioClickListener onUsuarioClickListener; // Interface para lidar com cliques nos usuários
+    private OnUsuarioClickListener onUsuarioClickListener; //
 
     public UsuariosAdapter(List<Usuario> usuarios) {
         this.usuarios = usuarios;
@@ -39,13 +39,13 @@ public class UsuariosAdapter extends RecyclerView.Adapter<UsuariosAdapter.Usuari
             holder.avatarImageView.setImageResource(R.drawable.ic_user_avatar);
 
         } else {
-            // Defina o texto como vazio ou qualquer outro valor desejado para o caso de usuário nulo
+
             holder.nameTextView.setText("");
             holder.emailTextView.setText("");
             holder.avatarImageView.setImageDrawable(null);
         }
 
-        // Define o clique no item da lista
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +74,6 @@ public class UsuariosAdapter extends RecyclerView.Adapter<UsuariosAdapter.Usuari
         }
     }
 
-    // Interface para lidar com cliques nos usuários
     public interface OnUsuarioClickListener {
         void onUsuarioClick(Usuario usuario);
     }

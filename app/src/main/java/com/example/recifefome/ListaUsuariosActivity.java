@@ -45,7 +45,7 @@ public class ListaUsuariosActivity extends AppCompatActivity {
                     String email = userSnapshot.child("email").getValue(String.class);
                     String collaboration = userSnapshot.child("collaboration").getValue(String.class);
 
-                    if (name != null && email != null) { // Verifica se o nome e o email são diferentes de nulo
+                    if (name != null && email != null) {
                         Usuario usuario = new Usuario(name, email, collaboration);
                         usuarios.add(usuario);
                     }
